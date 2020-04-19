@@ -1,0 +1,16 @@
+#issMap {
+    /*définir la map*/
+    height: 180px;
+}
+
+h1 {
+    /*pour décorer le titre*/
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: rgb(161, 23, 16);
+    border: 5px solid black;
+    text-shadow: 3px 3px 1px black;
+}
