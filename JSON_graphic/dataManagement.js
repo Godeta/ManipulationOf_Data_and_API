@@ -36,11 +36,12 @@
             latitude,
             longitude
         } = data;
-        //toujours mettre la vue à la position actuelle et au zoom
+        //bouge la map en gardant le markeur toujours au centre de celle ci, on peut le laisser bouger normalement en appelant cette fonction qu'une seule fois avec un booléan
         mymap.setView([latitude, longitude], mymap.getZoom());
+        //réactualise les coordonnées du markeur
         marker.setLatLng([latitude, longitude]);
 
-        document.getElementById('lat').textContent = latitude.toFixed(2);
+        document.getElementById('lat').textContent = latitude.toFixed(2); //affiche la latitude avec 2 nombre après la virgule
         document.getElementById('lon').textContent = longitude.toFixed(2);
     }
 
